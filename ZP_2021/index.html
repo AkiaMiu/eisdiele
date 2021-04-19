@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eispalast Ludwigslust</title>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <script>
+    $(function(){
+  $('.bxslider').bxSlider({
+    mode: 'fade',         
+      speed: 500,
+      auto: true,
+      infiniteLoop: true,
+      useCSS: false,
+      pager: false
+  });
+});
+
+$(function() {
+    var header = $("#layout_header");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 100) {
+            header.addClass("darkHeader");
+        } else {
+            header.removeClass("darkHeader");
+        }
+    });
+});
+  </script>
+</head>
+
+<body>
+    <div id="layout_wrapper">
+        <header id="layout_header">
+            <nav class="menu_left">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>
+                                Eissaison 2020
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                Der Eispalast
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="header_logo">
+                <img src="./gfx/logo/logo.png" alt="Eispalast">
+            </div>
+            <nav class="menu_right">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>
+                                Lieferservice
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                Kontakt
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main id="layout_main">
+            <section id="layout_slider">
+                <div class="bxslider">
+                    <div class="slider_item">
+                        <div class="slider_img">
+                            <img src="./gfx/slider/Haselnuss.jpg">
+                        </div>
+                        <div class="slider_content">
+                            <div class="slider_title">
+                                <span>Haselnuss</span>
+                            </div>
+                            <div class="slider_text">
+                                <p>Geröstete Nüsse gepaart mit Salzkaramell, Gewürzen und Splittern schwarzer Schokolade: Ein Eis mit großem Charakter!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <div class="slider_img">
+                            <img src="./gfx/slider/Minze.jpg">
+                        </div>
+                        <div class="slider_content">
+                            <div class="slider_title">
+                                <span>Minze</span>
+                            </div>
+                            <div class="slider_text">
+                                <p>Wilde Feldminze mit saisonalen Früchten wie Pfirsich, Mispel und Quitte aus der Region: Immer wieder ein neues Geschmackserlebnis!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <div class="slider_img">
+                            <img src="./gfx/slider/Brombeere.jpg">
+                        </div>
+                        <div class="slider_content">
+                            <div class="slider_title">
+                                <span>Brombeere</span>
+                            </div>
+                            <div class="slider_text">
+                                <p>Die Beere aus den Wäldern der Mecklenburgischen Schweiz, kombiniert mit Tonkabohne und einem Hauch Zimtblüte: Ein unbeschreiblicher Genuss!</p>
+                            </div>
+                        </div>
+                    </div>       
+                    <div class="slider_item">
+                        <div class="slider_img">
+                            <img src="./gfx/slider/Rhabarber.jpg">
+                        </div>
+                        <div class="slider_content">
+                            <div class="slider_title">
+                                <span>Rhabarber</span>
+                            </div>
+                            <div class="slider_text">
+                                <p>Karamellisierter Rhabarber kombiniert mit Limette und abgerundet mit Sauerrahm: Erfrischend anders!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <div class="slider_img">
+                            <img src="./gfx/slider/Sanddorn.jpg">
+                        </div>
+                        <div class="slider_content">
+                            <div class="slider_title">
+                                <span>Sanddorn</span>
+                            </div>
+                            <div class="slider_text">
+                                <p>Wo sollte dieses leicht herbe Eis besser schmecken als in Ludwigslust, der Stadt des Sanddorns?</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </section>
+            <section id="layout_content">
+                <div class="content_grid">
+                    <div class="flavors grid_item"></div>
+                    <div class="price grid_item"></div>
+                    <div class="bonus grid_item"></div>
+                    <div class="delivery grid_item"></div>
+                    <div class="hours grid_item"></div>
+                  </div>
+            </section>
+        </main>
+        <aside id="layout_footer"></aside>
+
+    </div>
+</body>
+
+</html>
